@@ -7,12 +7,12 @@ terraform {
         }
     }
 
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "DEV-Works"
+  #backend "remote" {
+  #  hostname = "app.terraform.io"
+  #  organization = "DEV-Works"
 
-    workspaces {
-      name = "terraform-myenv"
-    }
-  }
+   # workspaces {
+   #   name = "terraform-myenv"
+   # }
+  #}
 }
