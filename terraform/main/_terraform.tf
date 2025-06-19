@@ -6,13 +6,14 @@ terraform {
             version = "3.0.2-rc01"
         }
     }
-
-  #backend "remote" {
-  #  hostname = "app.terraform.io"
-  #  organization = "DEV-Works"
-
-   # workspaces {
-   #   name = "terraform-myenv"
-   # }
+    
+  #backend "http" {
+  #  address        = "https://api.tfstate.dev/github/v1"
+  #  lock_address   = "https://api.tfstate.dev/github/v1/lock"
+  #  unlock_address = "https://api.tfstate.dev/github/v1/lock"
+  #  lock_method    = "PUT"
+  #  unlock_method  = "DELETE"
+  #  username       = "packworkx/mytffile"
   #}
+  
 }
