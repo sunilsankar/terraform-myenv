@@ -1,1 +1,4 @@
 terraform/main/credentials.auto.tfvars
+.terraform.lock.hcl
+.terraform
+.terraform/*
