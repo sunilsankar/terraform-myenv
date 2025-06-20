@@ -15,3 +15,8 @@ variable "PUBLIC_SSH_KEY" {
   type = string
   sensitive = true
 }
+
+variable "environment" {
+  default = "dev"
+  description = "Development Environment"
+}
