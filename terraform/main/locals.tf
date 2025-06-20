@@ -1,4 +1,4 @@
-local {
+locals {
 vms = {
  "${var.environment}-vm1" = {
     name = "${var.environment}-vm1.sunil.cc"
@@ -25,7 +25,7 @@ vms = {
 "${var.environment}-vm3" = {
     name = "${var.environment}-vm3.sunil.cc"
     description = "For Development VM3"
-    vmid = var.vmid[1]
+    vmid = var.vmid[2]
     templatename = "alma9-Template"
     cores = 1
     memory = 512

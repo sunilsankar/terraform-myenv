@@ -2,3 +2,5 @@ terraform/main/credentials.auto.tfvars
 .terraform.lock.hcl
 .terraform
 .terraform/*
+terraform/main/terraform.tfstate
+terraform/main/terraform.tfstate.backup
