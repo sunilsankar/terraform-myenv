@@ -5,7 +5,13 @@ terraform {
             source = "telmate/proxmox"
             version = "3.0.2-rc01"
         }
+    
+    pihole = {
+      source = "ryanwholey/pihole"
+      version = "2.0.0-beta.1"
     }
+  }
+}
     
   #backend "http" {
   #  address        = "https://api.tfstate.dev/github/v1"
@@ -16,4 +22,3 @@ terraform {
   #  username       = "packworkx/mytffile"
   #}
   
-}

@@ -25,3 +25,12 @@ variable "vmid" {
  type = list(number)
  default = [100,101,102,103]
 }
+
+variable "PI_URL" {
+  type = string
+}
+
+variable "PIHOLE_PASSWORD" {
+  type = string
+  sensitive = true
+}
